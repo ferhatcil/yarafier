@@ -1,0 +1,1 @@
+rule network_ssl{meta:         author = "x0r"         description = "Communications over SSL"         version = "0.1"     strings:         $f1 = "ssleay32.dll" nocase         $f2 = "libeay32.dll" nocase         $f3 = "libssl32.dll" nocase         $c1 = "IdSSLOpenSSL" nocase     condition:         any of them}
