@@ -1,0 +1,1 @@
+rule SEH__vba : AntiDebug SEH{meta:   weight = 1   Author = "naxonez"   reference = "https://github.com/naxonez/yaraRules/blob/master/AntiDebugging.yara"  strings:   $ = "vbaExceptHandler"  condition:   any of them}
