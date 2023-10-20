@@ -1,0 +1,1 @@
+rule check_RaiseException_iat{meta:   Author = "http://twitter.com/j0sm1"   Description = "it's checked if RaiseException is imported"   Date = "20/04/2015"   Reference = "http://waleedassar.blogspot.com.es/2012/11/ollydbg-raiseexception-bug.html"   condition:   pe.imports("kernel32.dll","RaiseException")}
