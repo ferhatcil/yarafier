@@ -1,0 +1,1 @@
+rule ThreadControl__Context : AntiDebug ThreadControl{meta:   weight = 1   Author = "naxonez"   reference = "https://github.com/naxonez/yaraRules/blob/master/AntiDebugging.yara"  strings:   $ ="SetThreadContext"  condition:   any of them}
