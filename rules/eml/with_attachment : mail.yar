@@ -1,0 +1,1 @@
+rule with_attachment : mail{meta:   author = "Antonio Sanchez <asanchez@hispasec.com>"   reference = "http://laboratorio.blogs.hispasec.com/"   description = "Rule to detect the presence of an or several attachments"  strings:   $attachment_id = "X-Attachment-Id"  condition:   $attachment_id}
