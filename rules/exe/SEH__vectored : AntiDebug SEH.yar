@@ -1,0 +1,1 @@
+rule SEH__vectored : AntiDebug SEH{meta:   weight = 1   Author = "naxonez"   reference = "https://github.com/naxonez/yaraRules/blob/master/AntiDebugging.yara"  strings:   $ = "AddVectoredExceptionHandler"   $ = "RemoveVectoredExceptionHandler"  condition:   any of them}
