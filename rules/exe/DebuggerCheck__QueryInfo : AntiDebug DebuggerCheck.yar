@@ -1,0 +1,1 @@
+rule DebuggerCheck__QueryInfo : AntiDebug DebuggerCheck{meta:   weight = 1   Author = "naxonez"   reference = "https://github.com/naxonez/yaraRules/blob/master/AntiDebugging.yara"  strings:   $ ="QueryInformationProcess"  condition:   any of them}
