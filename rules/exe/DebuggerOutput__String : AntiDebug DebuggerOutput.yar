@@ -1,0 +1,1 @@
+rule DebuggerOutput__String : AntiDebug DebuggerOutput{meta:   weight = 1   Author = "naxonez"   reference = "https://github.com/naxonez/yaraRules/blob/master/AntiDebugging.yara"  strings:   $ ="OutputDebugString"  condition:   any of them}
