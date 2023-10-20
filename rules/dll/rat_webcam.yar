@@ -1,0 +1,1 @@
+rule rat_webcam{meta:         author = "x0r"         description = "Remote Administration toolkit using webcam"         version = "0.1"     strings:         $f1 = "avicap32.dll" nocase         $c1 = "capCreateCaptureWindow" nocase     condition:         all of them}
