@@ -1,0 +1,1 @@
+rule spreading_file{meta:         author = "x0r"         description = "Malware can spread east-west file"  version = "0.1"     strings:         $f1 = "autorun.inf" nocase         $f2 = "desktop.ini" nocase         $f3 = "desktop.lnk" nocase     condition:         any of them}
