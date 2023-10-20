@@ -1,0 +1,1 @@
+rule create_process{meta:         author = "x0r"         description = "Create a new process"  version = "0.2"     strings:         $f1 = "Shell32.dll" nocase         $f2 = "Kernel32.dll" nocase         $c1 = "ShellExecute"         $c2 = "WinExec"         $c3 = "CreateProcess"         $c4 = "CreateThread"     condition:         ($f1 and $c1 ) or $f2 and ($c2 or $c3 or $c4)}
