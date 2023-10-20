@@ -1,0 +1,1 @@
+rule sniff_lan{meta:         author = "x0r"         description = "Sniff Lan network traffic"  version = "0.1"     strings:         $f1 = "packet.dll" nocase         $f2 = "npf.sys" nocase         $f3 = "wpcap.dll" nocase         $f4 = "winpcap.dll" nocase     condition:         any of them}
