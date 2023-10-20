@@ -1,0 +1,1 @@
+rule cred_ff{meta:         author = "x0r"         description = "Steal Firefox credential"  version = "0.1"     strings:         $f1 = "signons.sqlite"         $f2 = "signons3.txt"         $f3 = "secmod.db"         $f4 = "cert8.db"         $f5 = "key3.db"     condition:         any of them}
