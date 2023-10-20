@@ -1,0 +1,1 @@
+rule spreading_share{meta:         author = "x0r"         description = "Malware can spread east-west using share drive"         version = "0.1"     strings:         $f1 = "netapi32.dll" nocase         $c1 = "NetShareGetInfo"         $c2 = "NetShareEnum"     condition:         $f1 and 1 of ($c*)}
