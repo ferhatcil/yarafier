@@ -1,0 +1,1 @@
+rule Check_unhandledExceptionFiler_iat{meta:   Author = "http://twitter.com/j0sm1"   Description = "it's checked if UnhandledExceptionFilter is imported"   Date = "20/04/2015"   Reference = "http://www.codeproject.com/Articles/30815/An-Anti-Reverse-Engineering-Guide#UnhandledExceptionFilter"   condition:   pe.imports("kernel32.dll","UnhandledExceptionFilter")}
