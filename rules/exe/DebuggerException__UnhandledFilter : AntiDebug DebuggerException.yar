@@ -1,0 +1,1 @@
+rule DebuggerException__UnhandledFilter : AntiDebug DebuggerException{meta:   weight = 1   Author = "naxonez"   reference = "https://github.com/naxonez/yaraRules/blob/master/AntiDebugging.yara"  strings:   $ ="SetUnhandledExceptionFilter"  condition:   any of them}
