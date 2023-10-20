@@ -1,0 +1,1 @@
+rule powershell{strings: $a = "powershell" nocase condition: $a}
